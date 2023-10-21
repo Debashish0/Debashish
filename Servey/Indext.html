@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <form id="surveyForm" action="#" method="post" onsubmit="return validateForm()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="USA">India</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Japan">Japan</option>
+            <option value="Germany">Germany</option>
+            <option value="Australia">Australia</option>
+            <option value="Italy">Italy</option>
+        </select>
+
+        <label class="gender-label">Gender</label>
+        <label class="gender-input" >
+          <input type="radio" name="gender" value="male" required> Male
+        </label>
+  
+        <label class="gender-input">
+          <input type="radio" name="gender" value="female" required> Female
+        </label>
+  
+        <label class="gender-input">
+          <input type="radio" name="gender" value="other" required> Other
+        </label>
+
+<br><br>
+
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+        <label for="suggestion">Any Suggestion for us:</label>
+        <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea >
+
+        <button type="submit">Submit</button>
+        <button type="reset" onclick="resetForm()">Reset</button>
+    </form>
+    <footer>
+        <footer>
+            © 2023 CustomerServey Form. All Rights Reserved | Design by<a href="https://www.debashishmohanty.official@gmail.com"> DEV</a>
+        </footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
